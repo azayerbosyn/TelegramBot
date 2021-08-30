@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'TelegramBot'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.telegram:telegrambots:5.3.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+}
