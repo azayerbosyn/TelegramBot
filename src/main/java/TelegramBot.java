@@ -49,7 +49,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     } else if (CurrencyEnum.isExist(message.getText())) {
 
-      String result = ApiService.getRateByCode(message.getText());
+      Double result = ApiService.getRateByCode(message.getText());
       sendMessage(message, result + " тг", true);
 
     } else {
